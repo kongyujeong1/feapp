@@ -1,0 +1,22 @@
+.navigation {  
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    margin: 0;
+    background-color: #fadfa5;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .navigation li {
+    display: inline-block;
+    margin: 0 1em;
+  }
+  .navigation a {
+    text-decoration: none;  
+    color: #262727;
+  }
+  .navigation a.selected {
+    font-weight: bold; 
+    color: #fab319;
+  }
+  
