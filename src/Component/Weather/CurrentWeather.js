@@ -1,6 +1,6 @@
 import React from 'react';
 
-const API_WEATHER = 'http://localhost:8088/weather-crawler/current-weathers/by-city-name';
+const API_WEATHER = 'http://localhost:8080/weather-crawler/current-weathers/by-city-name';
 
 class CurrentWeather extends React.Component {
   state = {

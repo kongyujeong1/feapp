@@ -4,7 +4,7 @@ import CityList from './CityList';
 import CurrentWeather from './CurrentWeather';
 import './weather.css';
 
-const API_CITIES = 'http://localhost:8088/weather-crawler/available-cities';
+const API_CITIES = 'http://localhost:8080/weather-crawler/available-cities';
 
 class Weather extends React.Component {
     state = {
