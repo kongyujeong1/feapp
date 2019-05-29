@@ -1,7 +1,6 @@
 import React from 'react';
-import Icon from './Icon';
 
-const API_WEATHER = 'http://localhost:8088/weather-crawler/current-weathers/by-city-name';
+const API_WEATHER = 'http://localhost:8080/weather-crawler/current-weathers/by-city-name';
 
 class CurrentWeather extends React.Component {
   state = {
@@ -33,7 +32,6 @@ class CurrentWeather extends React.Component {
 
     const celsius = (weather.main.temp - 273.15).toFixed(2);
     const weatherMain = weather.weather[0].main;
-    const iconId = weather.weather[0].id;
     const windSpeed = weather.wind.speed;
     const clouds = weather.clouds.all;
 
@@ -51,9 +49,7 @@ class CurrentWeather extends React.Component {
             <p className="c">구름</p>
             <p className="d">{clouds}</p>
         </div>
-        <div className="weather-image">
-          <Icon iconId={iconId} />
-        </div>
+
       </div>
     );
   }
